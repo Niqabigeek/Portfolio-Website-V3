@@ -44,3 +44,15 @@ document.addEventListener("DOMContentLoaded", () => {
     headingElement.style.opacity = 1; // Make the heading visible
     type();
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector("ul");
+
+    hamburger.addEventListener("click", function () {
+        console.log("Hamburger clicked!");
+        navLinks.classList.toggle("active");
+    });
+});
+

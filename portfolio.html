@@ -13,6 +13,11 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet"
     >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+   />
     <link rel="stylesheet" href="portfolio.css">
 
 </head>
@@ -20,14 +25,15 @@
 <body>
     <header>
         <nav>
-            <ul class="nav-links">
+            <ul>
                 <li><a href="#project">Project</a></li>
                 <li><a href="#me">Bio</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="#blog">Blog</a></li>
             </ul>
             <a href="https://docs.google.com/document/d/1Xv8vjwB_koU_eSIYPlz2TWb4UVvemKaf8YOa8sXZhSI/edit?tab=t.0#heading=h.5x0d5h95i329"
-                class="btn">Download Resume</a>
+                class="btn">Download Resume
+            </a>
             <div class="hamburger">
                 <div></div>
                 <div></div>
@@ -97,8 +103,27 @@
 
     </Section>
     <section class="projects" id="project">
-        <div>
-            <p class="p-head">Wanna See What I have Been Up to?</p>
+        <p class="p-head">Wanna See What I have Been Up to?</p>
+        <div class="project-container">
+           
+            <div class="project-card1">
+                <img src="Image/Desktop - 1 (1).png" width="400px" />
+                <p style="padding-top: 1rem; color: #767e3d;">Sisterfreelance.NG</p>
+                <!-- <p style="font-size: 0.8em;">A platform connecting Muslim women freelancers with small business owners</p> -->
+            </div>
+            <div class="project-card2">
+                <img src="Image/HR Solutions (5).png" width="400px"  />
+                <p style="padding-top: 1rem; color: #767e3d;">Foltech HR Solution</p>
+                <!-- <p style="font-size: 0.8em;">A digital HR solution designed to streamline workforce management</p> -->
+            </div>
+            
+            <div class="project-card3">
+                <img src="Image/Local farm .png" width="200px" id="imgp" />
+                <p style="padding-top: 1rem; color: #767e3d;">Local Farm Mart</p>
+                <!-- <p style="font-size: 0.8em;">A foodstuff e-commerce platform for local Nigerian food supplies</p> -->
+            </div>
+           
+           
         </div>
     </section>
     <section class="section-container" id="blog">
@@ -149,13 +174,14 @@
     <footer>
         <p>Got a project, an idea or just want to say hello? I’d love to hear from you! :)</p>
         <a href="https://github.com/Niqabigeek">GitHub |</a> 
-        <a href="">LinkedIn |</a>
+        <a href="https://www.linkedin.com/in/zeniat-badmus-6b9347230/">LinkedIn |</a>
         <a href="">Medium |</a>   
         <a href="">X (formerly Twitter)</a>
         <p style="font-size: small;">© 2024 Niqabigeek. All rights reserved.</p>
         <a
         href="https://wa.me/qr/WM7DY4QQBHUFI1"
-        class="whatsapp-float" 
+        class="animate__animated animate__pulse animate__infinite	infinite"  
+        id="whatsapp-float"
         target="_blank" 
         aria-label="Chat with us on WhatsApp"
         >
