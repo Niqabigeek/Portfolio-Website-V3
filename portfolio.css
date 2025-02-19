@@ -6,6 +6,11 @@
     color: #2D2A32;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 .hero-heading {
     font-size: 2em;
     height: 40px;
@@ -46,7 +51,7 @@ li a{
 
 
 main{
-    height: 90vh;
+    min-height: 90vh;
     background-color: #F0F0F0;
     /* padding: 16em; */
 }
@@ -432,6 +437,7 @@ footer a{
     }
 
     .para {
+        padding-top: 2em;
         font-size: 1rem;
     }
 
@@ -448,6 +454,98 @@ footer a{
     }
 
     #img {
-        width: 250px;
+        width: 200px;
+    }
+
+    
+    .hero-img {
+        padding-top: 1em;
+    }
+}
+
+
+/* Mobile Responsive Design for about me */
+@media (max-width: 1024px) {
+    .wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-container {
+        order: 1;
+        padding-left: 0;
+        padding-top: 3rem;
+    }
+    .hero-img {
+        order: 2; /* Moves the image below */
+        padding-top: 1rem;
+    }
+
+ 
+
+    .about-p {
+        font-size: 1.9em;
+        font-weight: 600;
+    }
+
+    .about-para, .about-para2 {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        gap: 2rem;
+    }
+
+    .about-wrapper {
+        width: 90%;
+    }
+
+    .hero-img {
+        order: 2; /* Moves the image below */
+        padding-top: 1rem;
+    }
+
+    .main-container{
+        order: 1;
+    }
+
+    #git-img {
+        width: 200px;
+    }
+
+    .about-p {
+        font-size: 1.5em;
+    }
+
+    .about-para, .about-para2 {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        gap: 1rem;
+    }
+
+    .about-wrapper {
+        width: 95%;
+    }
+
+    .hero-img {
+        padding-top: 0.5rem;
+    }
+
+    #git-img {
+        width: 180px;
+    }
+
+    .about-p {
+        font-size: 1.3em;
+    }
+
+    .about-para, .about-para2 {
+        font-size: 0.9em;
     }
 }

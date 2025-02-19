@@ -2,7 +2,7 @@
 const headings = [
     "Welcome.",
     "ẹ káàbọ̀.",
-    "Barka da zuwa.",
+    "Barka.",
     "Ndewo o.",
     ".مرحباً"
 ];
