@@ -394,6 +394,7 @@ footer a{
     }
 
     .main-container h2 {
+      
         font-size: 3rem;
     }
 
@@ -425,6 +426,10 @@ footer a{
 }
 
 @media (max-width: 480px) {
+    .wrapper {
+        padding-top: 4rem;
+    }
+    
     .main-wrapper {
         width: 90%;
     }
@@ -522,12 +527,14 @@ footer a{
 }
 
 @media (max-width: 480px) {
+
+
     .wrapper {
         gap: 1rem;
     }
 
     .about-wrapper {
-        width: 95%;
+        width: 90%;
     }
 
     .hero-img {
@@ -548,6 +555,8 @@ footer a{
     }
 
     .about-para, .about-para2 {
+        
+        text-align: justify;
         font-size: 0.9em;
     }
 }
@@ -580,4 +589,90 @@ footer a{
         height: auto; /* Allow section height to adjust dynamically */
         padding-bottom: 2rem;
     }
+}
+
+/* === BLOG SECTION RESPONSIVE STYLES === */
+@media (max-width: 1024px) {  /* Tablets & Small Laptops */
+    .section-container {
+        height: auto; /* Allow content to define height */
+        padding-bottom: 3rem;
+    }
+
+    .blog-wrapper {
+        flex-wrap: wrap; /* Allow items to wrap */
+        gap: 2rem;
+    }
+
+    .sub-blog {
+        font-size: 1.2em;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 768px) {  /* Tablets & Large Phones */
+    .mg-auto {
+        width: 95%;
+    }
+
+    .blog-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .main-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    #card-img {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .sub-blog {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {  /* Mobile Phones */
+
+    .mg-auto {
+        width: 95%;
+    } 
+
+   .p-head{
+    padding-bottom: 1rem;
+   }
+
+    .sub-blog {
+        font-size: 1em;
+        text-align: justify;
+    }
+
+    .main-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .blog-wrapper {
+        gap: 1rem;
+    }
+
+    #card-img {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    /* Footer Adjustments */
+    footer {
+        padding: 1.5rem;
+        height: auto;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+
 }
