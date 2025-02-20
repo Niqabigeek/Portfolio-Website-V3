@@ -162,7 +162,7 @@ main{
 
 .about{
     background-color: #f0f0f0;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 
@@ -266,10 +266,7 @@ footer a{
     width: 300px;
 }
 
-.projects{
-    height: 100vh;
-    /* background-color: red; */
-}
+
 
 .project-container{
     width: 90%;
@@ -308,9 +305,9 @@ footer a{
     border-radius: 2px;
 }
 
-/* Responsive Design for Mobile Devices */
+/* Responsive Design for header Mobile Devices */
 @media (max-width: 768px) {
-    /* Hide default menu */
+   
     header{
         max-width: 100vw;
         overflow-x: none;
@@ -541,11 +538,46 @@ footer a{
         width: 180px;
     }
 
+    .about{
+       
+        min-height: 70vh;
+    }
+
     .about-p {
-        font-size: 1.3em;
+        font-size: 1.9em;
     }
 
     .about-para, .about-para2 {
         font-size: 0.9em;
+    }
+}
+
+/*Mobile responsiveness for project*/
+@media (max-width: 768px) {  
+
+    
+    .p-head{
+        
+      
+        font-size: 1.9em;
+      
+    }
+ 
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem; /* Adds space between project cards */
+    }
+
+    .project-container img {
+        width: 100%; /* Makes images responsive */
+        max-width: 300px; /* Ensures images are not too large */
+        height: auto;
+    }
+
+    .projects {
+        height: auto; /* Allow section height to adjust dynamically */
+        padding-bottom: 2rem;
     }
 }
